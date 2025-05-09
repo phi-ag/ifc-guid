@@ -24,7 +24,7 @@ export function toIfcGuidArray(guid: Uint8Array): string {
 
 export function fromIfcGuidArray(ifcGuid: string): Uint8Array {
   if (ifcGuid?.length !== 22) throw Error(`Invalid IFC-GUID length (${ifcGuid?.length})`);
-  if (!charsRegex.test(ifcGuid)) throw Error("Invalid characters in IFC-GUID");
+  if (!charsRegex.test(ifcGuid)) throw Error("Invalid character in IFC-GUID");
 
   const result = new Uint8Array(16);
   result[0] = (reverse[ifcGuid[0]] << 6) | reverse[ifcGuid[1]];

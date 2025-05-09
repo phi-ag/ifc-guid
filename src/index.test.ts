@@ -50,7 +50,7 @@ describe("ifc guid", () => {
 
   test("invalid characters", () => {
     const ifc = "01bhO9fsz_RxNh9a_y9jl=";
-    expect(() => fromIfcGuid(ifc)).toThrowError("Invalid characters in IFC-GUID");
+    expect(() => fromIfcGuid(ifc)).toThrowError("Invalid character in IFC-GUID");
   });
 
   test("invalid uuid length", () => {
