@@ -12,7 +12,9 @@
     "dist"
   ],
   "keywords": [
-    "ifc"
+    "ifc",
+    "uuid",
+    "guid"
   ],
   "types": "./dist/index.d.ts",
   "module": "./dist/index.js",
