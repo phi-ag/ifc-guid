@@ -5,7 +5,7 @@
 [![Downloads](https://img.shields.io/npm/d18m/%40phi-ag%2Fifc-guid?style=for-the-badge)](https://www.npmjs.com/package/@phi-ag/ifc-guid)
 [![Size](https://img.shields.io/npm/unpacked-size/%40phi-ag%2Fifc-guid?style=for-the-badge&label=size&color=lightgray)](https://www.npmjs.com/package/@phi-ag/ifc-guid)
 
-Convert IFC GUID
+Convert [IFC GUID](https://technical.buildingsmart.org/resources/ifcimplementationguidance/ifc-guid/)
 
 ## Usage
 
