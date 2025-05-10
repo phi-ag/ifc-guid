@@ -2,21 +2,21 @@ import { parse, stringify } from "uuid";
 
 const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_$";
 
-const reverse = Object.fromEntries(chars.split("").map((c, i) => [c, i]));
+const reverse = Object.fromEntries(chars.split("").map((char, index) => [char, index]));
 
 const charsRegex = new RegExp(/^[\dA-Za-z_$]+$/);
 
-export function toIfcGuidArray(guid: Uint8Array): string {
-  if (guid?.length !== 16) throw Error(`Invalid UUID length (${guid?.length})`);
-  let result = chars[(guid[0] >> 6) & 63] + chars[guid[0] & 63];
+export function toIfcGuidArray(uuid: Uint8Array): string {
+  if (uuid?.length !== 16) throw Error(`Invalid UUID length (${uuid?.length})`);
+  let result = chars[(uuid[0] >> 6) & 63] + chars[uuid[0] & 63];
 
   for (let i = 1; i < 16; i = i + 3) {
-    const u32 = (guid[i] << 16) | (guid[i + 1] << 8) | guid[i + 2];
+    const u24 = (uuid[i] << 16) | (uuid[i + 1] << 8) | uuid[i + 2];
     result +=
-      chars[(u32 >> 18) & 63] +
-      chars[(u32 >> 12) & 63] +
-      chars[(u32 >> 6) & 63] +
-      chars[u32 & 63];
+      chars[(u24 >> 18) & 63] +
+      chars[(u24 >> 12) & 63] +
+      chars[(u24 >> 6) & 63] +
+      chars[u24 & 63];
   }
 
   return result;
@@ -44,8 +44,8 @@ export function fromIfcGuidArray(ifcGuid: string): Uint8Array {
   return result;
 }
 
-export function toIfcGuid(guid: string): string {
-  return toIfcGuidArray(parse(guid));
+export function toIfcGuid(uuid: string): string {
+  return toIfcGuidArray(parse(uuid));
 }
 
 export function fromIfcGuid(ifcGuid: string): string {

@@ -1,7 +1,7 @@
 import fc from "fast-check";
 import { describe, expect, test } from "vitest";
 
-import { fromIfcGuid, toIfcGuid, toIfcGuidArray } from "./index.js";
+import { fromIfcGuid, fromIfcGuidArray, toIfcGuid, toIfcGuidArray } from "./index.js";
 
 describe("ifc guid", () => {
   /*
@@ -10,12 +10,13 @@ describe("ifc guid", () => {
    * Passing it as array since it isn't a valid UUID (invalid version).
    */
   test("example uuid", () => {
-    const guid = new Uint8Array([
+    const ifc = "01psB8wRo$Y00000000005";
+    const uuid = new Uint8Array([
       1, 207, 98, 200, 233, 188, 191, 136, 0, 0, 0, 0, 0, 0, 0, 5
     ]);
 
-    const expected = "01psB8wRo$Y00000000005";
-    expect(toIfcGuidArray(guid)).toEqual(expected);
+    expect(toIfcGuidArray(uuid)).toEqual(ifc);
+    expect(fromIfcGuidArray(ifc)).toEqual(uuid);
   });
 
   /*
@@ -27,14 +28,16 @@ describe("ifc guid", () => {
    */
   test("example uuid v4", () => {
     const ifc = "0VGQug_k98B9cf4GSEmT_F";
-    const guid = "1f41ae2a-fae2-482c-99a9-11070ec1df8f";
-    expect(toIfcGuid(guid)).toEqual(ifc);
+    const uuid = "1f41ae2a-fae2-482c-99a9-11070ec1df8f";
+    expect(toIfcGuid(uuid)).toEqual(ifc);
+    expect(fromIfcGuid(ifc)).toEqual(uuid);
   });
 
   test("example uuid v7", () => {
     const ifc = "01bhO9fsz_RxNh9a_y9jls";
-    const guid = "0196b609-a76f-7e6f-b5eb-264fbc26dbf6";
-    expect(toIfcGuid(guid)).toEqual(ifc);
+    const uuid = "0196b609-a76f-7e6f-b5eb-264fbc26dbf6";
+    expect(toIfcGuid(uuid)).toEqual(ifc);
+    expect(fromIfcGuid(ifc)).toEqual(uuid);
   });
 
   test("invalid length", () => {
@@ -64,9 +67,8 @@ describe("ifc guid", () => {
 
   test("fast check", () => {
     fc.assert(
-      fc.property(fc.uuid(), (guid) => {
-        const ifcGuid = toIfcGuid(guid);
-        expect(fromIfcGuid(ifcGuid)).toEqual(guid);
+      fc.property(fc.uuid(), (uuid) => {
+        expect(fromIfcGuid(toIfcGuid(uuid))).toEqual(uuid);
       }),
       { numRuns: 1_000 }
     );
