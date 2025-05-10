@@ -1,4 +1,5 @@
 import fc from "fast-check";
+import { MAX as MAX_UUID, NIL as NIL_UUID } from "uuid";
 import { describe, expect, test } from "vitest";
 
 import { fromIfcGuid, fromIfcGuidArray, toIfcGuid, toIfcGuidArray } from "./index.js";
@@ -38,6 +39,16 @@ describe("ifc guid", () => {
     const uuid = "0196b609-a76f-7e6f-b5eb-264fbc26dbf6";
     expect(toIfcGuid(uuid)).toEqual(ifc);
     expect(fromIfcGuid(ifc)).toEqual(uuid);
+  });
+
+  test("uuid limits", () => {
+    const nil = "0000000000000000000000";
+    expect(toIfcGuid(NIL_UUID)).toEqual(nil);
+    expect(fromIfcGuid(nil)).toEqual(NIL_UUID);
+
+    const max = "3$$$$$$$$$$$$$$$$$$$$$";
+    expect(toIfcGuid(MAX_UUID)).toEqual(max);
+    expect(fromIfcGuid(max)).toEqual(MAX_UUID);
   });
 
   test("invalid length", () => {
