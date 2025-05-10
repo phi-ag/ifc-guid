@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/phi-ag/ifc-guid/compare/v1.0.0...v1.0.1) (2025-05-10)
+
+
+### Bug Fixes
+
+* set minimum uuid version to v10 ([6f25ae6](https://github.com/phi-ag/ifc-guid/commit/6f25ae6fa976258c8adcc2feef1e644151368d5b))
+
 ## [1.0.0](https://github.com/phi-ag/ifc-guid/compare/v0.0.3...v1.0.0) (2025-05-10)
 
 
