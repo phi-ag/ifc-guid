@@ -33,7 +33,7 @@
     "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test"
   },
   "dependencies": {
-    "uuid": ">=8.3.0"
+    "uuid": ">=10"
   },
   "devDependencies": {
     "@eslint/js": "9.26.0",
