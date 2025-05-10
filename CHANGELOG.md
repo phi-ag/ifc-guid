@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0](https://github.com/phi-ag/ifc-guid/compare/v0.0.3...v1.0.0) (2025-05-10)
+
+
+### Tests
+
+* add uuid limits test ([9bda99c](https://github.com/phi-ag/ifc-guid/commit/9bda99c6a77d988011e4ccf21be48e8fb66a95e3))
+
 ## [0.0.3](https://github.com/phi-ag/ifc-guid/compare/v0.0.2...v0.0.3) (2025-05-10)
 
 
