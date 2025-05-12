@@ -4,7 +4,11 @@ const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_$"
 
 const reverse = Object.fromEntries(chars.split("").map((char, index) => [char, index]));
 
-const charsRegex = new RegExp(/^[\dA-Za-z_$]+$/);
+const ifcGuidRegex = new RegExp(/^[0-3][\dA-Za-z_$]{21}$/);
+
+export function validate(ifcGuid: string): boolean {
+  return typeof ifcGuid === "string" && ifcGuidRegex.test(ifcGuid);
+}
 
 export function toIfcGuidArray(uuid: Uint8Array): string {
   if (uuid?.length !== 16) throw Error(`Invalid UUID length (${uuid?.length})`);
@@ -24,7 +28,7 @@ export function toIfcGuidArray(uuid: Uint8Array): string {
 
 export function fromIfcGuidArray(ifcGuid: string): Uint8Array {
   if (ifcGuid?.length !== 22) throw Error(`Invalid IFC-GUID length (${ifcGuid?.length})`);
-  if (!charsRegex.test(ifcGuid)) throw Error("Invalid character in IFC-GUID");
+  if (!validate(ifcGuid)) throw Error("Invalid character in IFC-GUID");
 
   const result = new Uint8Array(16);
   result[0] = (reverse[ifcGuid[0]] << 6) | reverse[ifcGuid[1]];
