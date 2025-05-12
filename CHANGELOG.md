@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/phi-ag/ifc-guid/compare/v1.0.1...v1.1.0) (2025-05-12)
+
+
+### Features
+
+* add validate function and ensure first character is [0-3] ([0c785e7](https://github.com/phi-ag/ifc-guid/commit/0c785e7df8835f9efc1c01686d55fef3fe1d57e4))
+
 ## [1.0.1](https://github.com/phi-ag/ifc-guid/compare/v1.0.0...v1.0.1) (2025-05-10)
 
 
