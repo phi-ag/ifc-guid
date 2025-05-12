@@ -2,7 +2,13 @@ import fc from "fast-check";
 import { MAX as MAX_UUID, NIL as NIL_UUID } from "uuid";
 import { describe, expect, test } from "vitest";
 
-import { fromIfcGuid, fromIfcGuidArray, toIfcGuid, toIfcGuidArray } from "./index.js";
+import {
+  fromIfcGuid,
+  fromIfcGuidArray,
+  toIfcGuid,
+  toIfcGuidArray,
+  validate
+} from "./index.js";
 
 describe("ifc guid", () => {
   /*
@@ -51,18 +57,44 @@ describe("ifc guid", () => {
     expect(fromIfcGuid(max)).toEqual(MAX_UUID);
   });
 
+  test("validate", () => {
+    const ifc = "0VGQug_k98B9cf4GSEmT_F";
+    expect(validate(ifc)).toBeTruthy();
+
+    const tooLong = "01bhO9fsz_RxNh9a_y9jls_";
+    expect(validate(tooLong)).toBeFalsy();
+
+    const tooShort = "01bhO9fsz_RxNh9a_y9jl";
+    expect(validate(tooShort)).toBeFalsy();
+
+    const invalidFirstCharacter = "41bhO9fsz_RxNh9a_y9jls";
+    expect(validate(invalidFirstCharacter)).toBeFalsy();
+
+    // @ts-expect-error
+    expect(validate([1, 2, 3])).toBeFalsy();
+
+    // @ts-expect-error
+    expect(validate(null)).toBeFalsy();
+  });
+
+  test("invalid type", () => {
+    // @ts-expect-error
+    expect(() => fromIfcGuid([1, 2, 3])).toThrowError("Invalid IFC-GUID type");
+    // @ts-expect-error
+    expect(() => fromIfcGuid(123)).toThrowError("Invalid IFC-GUID type");
+    // @ts-expect-error
+    expect(() => fromIfcGuid(null)).toThrowError("Invalid IFC-GUID type");
+  });
+
   test("invalid length", () => {
     const tooLong = "01bhO9fsz_RxNh9a_y9jls_";
     expect(() => fromIfcGuid(tooLong)).toThrowError("Invalid IFC-GUID length (23)");
 
     const tooShort = "01bhO9fsz_RxNh9a_y9jl";
     expect(() => fromIfcGuid(tooShort)).toThrowError("Invalid IFC-GUID length (21)");
-
-    // @ts-expect-error
-    expect(() => fromIfcGuid(null)).toThrowError("Invalid IFC-GUID length (undefined)");
   });
 
-  test("invalid characters", () => {
+  test("invalid character", () => {
     const containsEquals = "01bhO9fsz_RxNh9a_y9jl=";
     expect(() => fromIfcGuid(containsEquals)).toThrowError(
       "Invalid character in IFC-GUID"
@@ -79,8 +111,15 @@ describe("ifc guid", () => {
       1, 207, 98, 200, 233, 188, 191, 136, 0, 0, 0, 0, 0, 0, 0
     ]);
     expect(() => toIfcGuidArray(tooShort)).toThrowError("Invalid UUID length (15)");
+  });
+
+  test("invalid uuid type", () => {
     // @ts-expect-error
-    expect(() => toIfcGuidArray(null)).toThrowError("Invalid UUID length (undefined)");
+    expect(() => toIfcGuidArray([1, 2, 3])).toThrowError("Invalid UUID type");
+    // @ts-expect-error
+    expect(() => toIfcGuidArray("")).toThrowError("Invalid UUID type");
+    // @ts-expect-error
+    expect(() => toIfcGuidArray(null)).toThrowError("Invalid UUID type");
   });
 
   test("fast check", () => {
