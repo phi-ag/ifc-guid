@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/phi-ag/ifc-guid/compare/v1.1.1...v1.1.2) (2025-05-12)
+
+
+### Miscellaneous Chores
+
+* add error cause ([c368480](https://github.com/phi-ag/ifc-guid/commit/c368480ba923ad768375967597737b6178f37b0b))
+
 ## [1.1.1](https://github.com/phi-ag/ifc-guid/compare/v1.1.0...v1.1.1) (2025-05-12)
 
 
