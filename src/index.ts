@@ -11,8 +11,11 @@ export function validate(ifcGuid: string): boolean {
 }
 
 export function toIfcGuidArray(uuid: Uint8Array): string {
-  if (!(uuid instanceof Uint8Array)) throw new TypeError("Invalid UUID type");
-  if (uuid.length !== 16) throw Error(`Invalid UUID length (${uuid.length})`);
+  if (!(uuid instanceof Uint8Array))
+    throw new TypeError("Invalid UUID type", { cause: { type: typeof uuid } });
+  if (uuid.length !== 16)
+    throw Error("Invalid UUID length", { cause: { length: uuid.length } });
+
   let result = chars[(uuid[0] >> 6) & 63] + chars[uuid[0] & 63];
 
   for (let i = 1; i < 16; i = i + 3) {
@@ -28,8 +31,10 @@ export function toIfcGuidArray(uuid: Uint8Array): string {
 }
 
 export function fromIfcGuidArray(ifcGuid: string): Uint8Array {
-  if (typeof ifcGuid !== "string") throw new TypeError("Invalid IFC-GUID type");
-  if (ifcGuid.length !== 22) throw Error(`Invalid IFC-GUID length (${ifcGuid.length})`);
+  if (typeof ifcGuid !== "string")
+    throw new TypeError("Invalid IFC-GUID type", { cause: { type: typeof ifcGuid } });
+  if (ifcGuid.length !== 22)
+    throw Error("Invalid IFC-GUID length", { cause: { length: ifcGuid.length } });
   if (!ifcGuidRegex.test(ifcGuid)) throw Error("Invalid character in IFC-GUID");
 
   const result = new Uint8Array(16);
