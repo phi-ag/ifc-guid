@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/phi-ag/ifc-guid/compare/v1.1.0...v1.1.1) (2025-05-12)
+
+
+### Miscellaneous Chores
+
+* explicitly check input type and add validate test ([f22427c](https://github.com/phi-ag/ifc-guid/commit/f22427c4319a5c03a83713b3e9e26b7f9f389a13))
+
 ## [1.1.0](https://github.com/phi-ag/ifc-guid/compare/v1.0.1...v1.1.0) (2025-05-12)
 
 
