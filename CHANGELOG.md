@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.1.3](https://github.com/phi-ag/ifc-guid/compare/v1.1.2...v1.1.3) (2025-05-31)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([0fe532a](https://github.com/phi-ag/ifc-guid/commit/0fe532a04c3e4e655059ce8e106ba2b2ad22c7a9))
+* **deps:** lock file maintenance ([35f644a](https://github.com/phi-ag/ifc-guid/commit/35f644ac1007328b75d13a76129a868a626b8d09))
+* **deps:** update codecov/codecov-action digest to 18283e0 ([c5aa171](https://github.com/phi-ag/ifc-guid/commit/c5aa171422681a4e9679930949e61742667f29c3))
+* **deps:** update codecov/test-results-action digest to 47f89e9 ([4fdb290](https://github.com/phi-ag/ifc-guid/commit/4fdb29055dfa85779164225e1c17c520e2bc93bc))
+* **deps:** update dependency typescript-eslint to v8.32.1 ([17613fc](https://github.com/phi-ag/ifc-guid/commit/17613fcc19576a82e767b7cf9c8c4659e59d81c7))
+* **deps:** update dependency typescript-eslint to v8.33.0 ([d4f4de8](https://github.com/phi-ag/ifc-guid/commit/d4f4de87411735eb06d283a048d429e9be6fac64))
+* **deps:** update eslint monorepo to v9.27.0 ([20c89b0](https://github.com/phi-ag/ifc-guid/commit/20c89b0c3df90788eb34630463f4f1db03867d72))
+* **deps:** update eslint monorepo to v9.28.0 ([80398d0](https://github.com/phi-ag/ifc-guid/commit/80398d07940239197010783d27cad702d6dfff01))
+* **deps:** update node.js to v24.0.2 ([e022c53](https://github.com/phi-ag/ifc-guid/commit/e022c530e3a689a41e08072587d0fb9f19c34223))
+* **deps:** update node.js to v24.1.0 ([7489a4d](https://github.com/phi-ag/ifc-guid/commit/7489a4d4297a00dfad9240953ac7f14a741c768c))
+* **deps:** update pnpm to v10.11.0 ([1dc428f](https://github.com/phi-ag/ifc-guid/commit/1dc428f6b5b140739be790abdfa418d0f24a0614))
+* **deps:** update vitest monorepo to v3.1.4 ([42f4665](https://github.com/phi-ag/ifc-guid/commit/42f4665ba67d27924e7fc8bb10632e71175c1bcd))
+* **renovate:** enable lock file maintenance ([2720ac1](https://github.com/phi-ag/ifc-guid/commit/2720ac1e27fadff37700dcdcd61a8d18ad11fa23))
+
 ## [1.1.2](https://github.com/phi-ag/ifc-guid/compare/v1.1.1...v1.1.2) (2025-05-12)
 
 
