@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.4](https://github.com/phi-ag/ifc-guid/compare/v1.1.3...v1.1.4) (2025-10-18)
+
+
+### Miscellaneous Chores
+
+* **deps:** update eslint monorepo to v9.38.0 ([bd90dbd](https://github.com/phi-ag/ifc-guid/commit/bd90dbd6c4ab097108005d98e6d6d1bd10b54bf5))
+* **deps:** update node.js to v25 ([6eabc55](https://github.com/phi-ag/ifc-guid/commit/6eabc555884181eae63fe03f76c62070f47b9c58))
+
 ## [1.1.3](https://github.com/phi-ag/ifc-guid/compare/v1.1.2...v1.1.3) (2025-10-15)
 
 
