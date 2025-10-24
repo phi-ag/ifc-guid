@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.4](https://github.com/phi-ag/ifc-guid/compare/v1.1.3...v1.1.4) (2025-10-24)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([2797923](https://github.com/phi-ag/ifc-guid/commit/2797923688ca4312d97b2dd867e12dbf3a57d960))
+* **deps:** update dependency typescript-eslint to v8.46.2 ([bca8836](https://github.com/phi-ag/ifc-guid/commit/bca88364beec59cd9fd1655ebad23aaaa1cf27b9))
+* **deps:** update eslint monorepo to v9.38.0 ([bd90dbd](https://github.com/phi-ag/ifc-guid/commit/bd90dbd6c4ab097108005d98e6d6d1bd10b54bf5))
+* **deps:** update googleapis/release-please-action digest to 16a9c90 ([92816d5](https://github.com/phi-ag/ifc-guid/commit/92816d5cf50cc49970dd71d80768ea35d7b0fb93))
+* **deps:** update node.js to v25 ([6eabc55](https://github.com/phi-ag/ifc-guid/commit/6eabc555884181eae63fe03f76c62070f47b9c58))
+* **deps:** update pnpm to v10.19.0 ([2343362](https://github.com/phi-ag/ifc-guid/commit/23433623c329519a7de2988aaa74e74ee104804c))
+* **deps:** update vitest monorepo to v4 ([537f499](https://github.com/phi-ag/ifc-guid/commit/537f49976edd9f29a45bb5dc1de719504979c7cd))
+* **deps:** update vitest monorepo to v4.0.2 ([16e7974](https://github.com/phi-ag/ifc-guid/commit/16e7974d1621d9b154a3996292395370c201b34d))
+* **deps:** update vitest monorepo to v4.0.3 ([15baee8](https://github.com/phi-ag/ifc-guid/commit/15baee82c773ff3784f6ae0f6dd8e9bf1be447ca))
+
 ## [1.1.3](https://github.com/phi-ag/ifc-guid/compare/v1.1.2...v1.1.3) (2025-10-15)
 
 
