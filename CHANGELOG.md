@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.1.4](https://github.com/phi-ag/ifc-guid/compare/v1.1.3...v1.1.4) (2025-10-30)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([d2ea239](https://github.com/phi-ag/ifc-guid/commit/d2ea2391f587e37e7246ff7064b31ff75d28f57e))
+* **deps:** lock file maintenance ([2797923](https://github.com/phi-ag/ifc-guid/commit/2797923688ca4312d97b2dd867e12dbf3a57d960))
+* **deps:** update dependency typescript-eslint to v8.46.2 ([bca8836](https://github.com/phi-ag/ifc-guid/commit/bca88364beec59cd9fd1655ebad23aaaa1cf27b9))
+* **deps:** update eslint monorepo to v9.38.0 ([bd90dbd](https://github.com/phi-ag/ifc-guid/commit/bd90dbd6c4ab097108005d98e6d6d1bd10b54bf5))
+* **deps:** update googleapis/release-please-action digest to 16a9c90 ([92816d5](https://github.com/phi-ag/ifc-guid/commit/92816d5cf50cc49970dd71d80768ea35d7b0fb93))
+* **deps:** update node.js to v25 ([6eabc55](https://github.com/phi-ag/ifc-guid/commit/6eabc555884181eae63fe03f76c62070f47b9c58))
+* **deps:** update node.js to v25.1.0 ([8820a21](https://github.com/phi-ag/ifc-guid/commit/8820a21c59648533efcadb0762379cf20be9c6c2))
+* **deps:** update pnpm to v10.19.0 ([2343362](https://github.com/phi-ag/ifc-guid/commit/23433623c329519a7de2988aaa74e74ee104804c))
+* **deps:** update pnpm to v10.20.0 ([9680388](https://github.com/phi-ag/ifc-guid/commit/9680388e3dda24235f0edfb1d8cffb380ef721d9))
+* **deps:** update vitest monorepo to v4 ([537f499](https://github.com/phi-ag/ifc-guid/commit/537f49976edd9f29a45bb5dc1de719504979c7cd))
+* **deps:** update vitest monorepo to v4.0.2 ([16e7974](https://github.com/phi-ag/ifc-guid/commit/16e7974d1621d9b154a3996292395370c201b34d))
+* **deps:** update vitest monorepo to v4.0.3 ([15baee8](https://github.com/phi-ag/ifc-guid/commit/15baee82c773ff3784f6ae0f6dd8e9bf1be447ca))
+* **deps:** update vitest monorepo to v4.0.4 ([425fa0b](https://github.com/phi-ag/ifc-guid/commit/425fa0b9dfddc00159b75044c46525e0aded7de9))
+* **deps:** update vitest monorepo to v4.0.5 ([46c151e](https://github.com/phi-ag/ifc-guid/commit/46c151eb20773925be3aab65c34472c9e8610a71))
+
+
+### Continuous Integration
+
+* **renovate:** set minimum release age ([0210ab1](https://github.com/phi-ag/ifc-guid/commit/0210ab1119aebc42f82ff87e54668dc1dd5a9d22))
+
 ## [1.1.3](https://github.com/phi-ag/ifc-guid/compare/v1.1.2...v1.1.3) (2025-10-15)
 
 
