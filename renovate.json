@@ -6,6 +6,8 @@
     "group:monorepos",
     "group:recommended"
   ],
+  "minimumReleaseAge": "1 day",
+  "internalChecksFilter": "strict",
   "postUpdateOptions": ["pnpmDedupe"],
   "lockFileMaintenance": {
     "enabled": true,
