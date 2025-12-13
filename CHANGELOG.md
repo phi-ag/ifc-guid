@@ -1,5 +1,65 @@
 # Changelog
 
+## [1.1.4](https://github.com/phi-ag/ifc-guid/compare/v1.1.3...v1.1.4) (2025-12-13)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([092eebb](https://github.com/phi-ag/ifc-guid/commit/092eebb690392fe49c2d73328ee0bf97fa1d09dc))
+* **deps:** lock file maintenance ([8db8b65](https://github.com/phi-ag/ifc-guid/commit/8db8b65442d3439fd426923ff31a781c3e1f3fcc))
+* **deps:** lock file maintenance ([a4d8a1e](https://github.com/phi-ag/ifc-guid/commit/a4d8a1e117355dc5552bb6f0f34480a83faac459))
+* **deps:** lock file maintenance ([d2ea239](https://github.com/phi-ag/ifc-guid/commit/d2ea2391f587e37e7246ff7064b31ff75d28f57e))
+* **deps:** lock file maintenance ([2797923](https://github.com/phi-ag/ifc-guid/commit/2797923688ca4312d97b2dd867e12dbf3a57d960))
+* **deps:** update actions/cache action to v5 ([23b69f1](https://github.com/phi-ag/ifc-guid/commit/23b69f1006bba1b3cf07a024612aec78feafe2b2))
+* **deps:** update actions/checkout action to v6 ([79dc6e9](https://github.com/phi-ag/ifc-guid/commit/79dc6e931ce2edeb47f2d0649067172dec06291b))
+* **deps:** update dependency @trivago/prettier-plugin-sort-imports to v6 ([3764b78](https://github.com/phi-ag/ifc-guid/commit/3764b7807ac3f4c000f5a641f245ac3b187c6358))
+* **deps:** update dependency fast-check to v4.4.0 ([93149cc](https://github.com/phi-ag/ifc-guid/commit/93149ccd0409d30bf84605a1295dfb9f4ff7f5de))
+* **deps:** update dependency prettier to v3.7.1 ([bed00a2](https://github.com/phi-ag/ifc-guid/commit/bed00a27e94e28b117a646ee3bf8e1065dd1e9d7))
+* **deps:** update dependency prettier to v3.7.2 ([8cc5490](https://github.com/phi-ag/ifc-guid/commit/8cc5490f5d8984bb14eb5bcb95ece72a857d10f4))
+* **deps:** update dependency prettier to v3.7.3 ([bedd18b](https://github.com/phi-ag/ifc-guid/commit/bedd18b88d75c175f8cdb64616a4ec02c6366650))
+* **deps:** update dependency prettier to v3.7.4 ([64cd71f](https://github.com/phi-ag/ifc-guid/commit/64cd71f68c05e3282bb44a92b40ea113048475bd))
+* **deps:** update dependency typescript-eslint to v8.46.2 ([bca8836](https://github.com/phi-ag/ifc-guid/commit/bca88364beec59cd9fd1655ebad23aaaa1cf27b9))
+* **deps:** update dependency typescript-eslint to v8.46.3 ([6d7ab4c](https://github.com/phi-ag/ifc-guid/commit/6d7ab4c5709f8bced296629357bcbb4d6dc3dafc))
+* **deps:** update dependency typescript-eslint to v8.46.4 ([0041b15](https://github.com/phi-ag/ifc-guid/commit/0041b15143ea61bd81a3c085a3a0cc0d006291b2))
+* **deps:** update dependency typescript-eslint to v8.47.0 ([7308814](https://github.com/phi-ag/ifc-guid/commit/7308814ed13a7ec1df09f6d6a6f76c668ebcce13))
+* **deps:** update dependency typescript-eslint to v8.48.0 ([67bbceb](https://github.com/phi-ag/ifc-guid/commit/67bbceb731e705e69ad81930093d95d0cb0087c2))
+* **deps:** update dependency typescript-eslint to v8.48.1 ([f62f4cc](https://github.com/phi-ag/ifc-guid/commit/f62f4ccac04f2f5e93bda12883f10b1d3aa8de44))
+* **deps:** update dependency typescript-eslint to v8.49.0 ([365699c](https://github.com/phi-ag/ifc-guid/commit/365699ceafe49ff8053bac20acc942b7f259b670))
+* **deps:** update eslint monorepo to v9.38.0 ([bd90dbd](https://github.com/phi-ag/ifc-guid/commit/bd90dbd6c4ab097108005d98e6d6d1bd10b54bf5))
+* **deps:** update eslint monorepo to v9.39.0 ([814cf7b](https://github.com/phi-ag/ifc-guid/commit/814cf7b470f1ffcf85b76db3513f8de51cc9df94))
+* **deps:** update eslint monorepo to v9.39.1 ([5a154ae](https://github.com/phi-ag/ifc-guid/commit/5a154ae2da92f95822b4e8ef28572b1904a15eb0))
+* **deps:** update googleapis/release-please-action digest to 16a9c90 ([92816d5](https://github.com/phi-ag/ifc-guid/commit/92816d5cf50cc49970dd71d80768ea35d7b0fb93))
+* **deps:** update node.js to v25 ([6eabc55](https://github.com/phi-ag/ifc-guid/commit/6eabc555884181eae63fe03f76c62070f47b9c58))
+* **deps:** update node.js to v25.1.0 ([8820a21](https://github.com/phi-ag/ifc-guid/commit/8820a21c59648533efcadb0762379cf20be9c6c2))
+* **deps:** update node.js to v25.2.0 ([a4338fe](https://github.com/phi-ag/ifc-guid/commit/a4338fe32530922e4fcb8357ec9b3e6b65668d2e))
+* **deps:** update node.js to v25.2.1 ([b7233bd](https://github.com/phi-ag/ifc-guid/commit/b7233bd233ef522ceb59abc1f67149cedc6366d2))
+* **deps:** update pnpm to v10.19.0 ([2343362](https://github.com/phi-ag/ifc-guid/commit/23433623c329519a7de2988aaa74e74ee104804c))
+* **deps:** update pnpm to v10.20.0 ([9680388](https://github.com/phi-ag/ifc-guid/commit/9680388e3dda24235f0edfb1d8cffb380ef721d9))
+* **deps:** update pnpm to v10.21.0 ([8b4b7ff](https://github.com/phi-ag/ifc-guid/commit/8b4b7ff39c59b45445b5392c0a24b9393182b015))
+* **deps:** update pnpm to v10.22.0 ([08d866d](https://github.com/phi-ag/ifc-guid/commit/08d866d84d66c1e256a529efbfdbbcf4c38eadfc))
+* **deps:** update pnpm to v10.23.0 ([2aa0f71](https://github.com/phi-ag/ifc-guid/commit/2aa0f71569d38010af97dbdd7f8334d67d0512a8))
+* **deps:** update pnpm to v10.24.0 ([59529dd](https://github.com/phi-ag/ifc-guid/commit/59529ddcb7707cb9e0baf0d07b8dd3629a59911b))
+* **deps:** update pnpm to v10.25.0 ([59c8b32](https://github.com/phi-ag/ifc-guid/commit/59c8b32c69db9c1cce5d23082a8fadb16bc8b4c5))
+* **deps:** update vitest monorepo to v4 ([537f499](https://github.com/phi-ag/ifc-guid/commit/537f49976edd9f29a45bb5dc1de719504979c7cd))
+* **deps:** update vitest monorepo to v4.0.10 ([129eb6f](https://github.com/phi-ag/ifc-guid/commit/129eb6f34ad8264c942337ff2f02eb13d2577127))
+* **deps:** update vitest monorepo to v4.0.12 ([5d997d1](https://github.com/phi-ag/ifc-guid/commit/5d997d187314880c8aebc6b5d584173bd9c217d9))
+* **deps:** update vitest monorepo to v4.0.13 ([724c8c5](https://github.com/phi-ag/ifc-guid/commit/724c8c5425f7ea9ce40a6416599851e25573722c))
+* **deps:** update vitest monorepo to v4.0.14 ([576a70a](https://github.com/phi-ag/ifc-guid/commit/576a70ad2defa43d29026e5bc4a6b931d431b7c9))
+* **deps:** update vitest monorepo to v4.0.15 ([7e16492](https://github.com/phi-ag/ifc-guid/commit/7e164920705d1568a43ba80017513caed028c570))
+* **deps:** update vitest monorepo to v4.0.2 ([16e7974](https://github.com/phi-ag/ifc-guid/commit/16e7974d1621d9b154a3996292395370c201b34d))
+* **deps:** update vitest monorepo to v4.0.3 ([15baee8](https://github.com/phi-ag/ifc-guid/commit/15baee82c773ff3784f6ae0f6dd8e9bf1be447ca))
+* **deps:** update vitest monorepo to v4.0.4 ([425fa0b](https://github.com/phi-ag/ifc-guid/commit/425fa0b9dfddc00159b75044c46525e0aded7de9))
+* **deps:** update vitest monorepo to v4.0.5 ([46c151e](https://github.com/phi-ag/ifc-guid/commit/46c151eb20773925be3aab65c34472c9e8610a71))
+* **deps:** update vitest monorepo to v4.0.6 ([d737ec3](https://github.com/phi-ag/ifc-guid/commit/d737ec3180a4bc88c5b5bcc9b2a6a7cad222125b))
+* **deps:** update vitest monorepo to v4.0.7 ([cc27fa7](https://github.com/phi-ag/ifc-guid/commit/cc27fa794ba6f0d6a19d48d233e79fa464926c53))
+* **deps:** update vitest monorepo to v4.0.8 ([a0dc1bb](https://github.com/phi-ag/ifc-guid/commit/a0dc1bbc1c21e712c93b2cd5f8e5f84d61b90a5a))
+* **deps:** update vitest monorepo to v4.0.9 ([c5dbd8f](https://github.com/phi-ag/ifc-guid/commit/c5dbd8fd2af92633c8ce9ebd054f03e1583c937a))
+
+
+### Continuous Integration
+
+* **renovate:** set minimum release age ([0210ab1](https://github.com/phi-ag/ifc-guid/commit/0210ab1119aebc42f82ff87e54668dc1dd5a9d22))
+
 ## [1.1.3](https://github.com/phi-ag/ifc-guid/compare/v1.1.2...v1.1.3) (2025-10-15)
 
 
