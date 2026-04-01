@@ -39,7 +39,7 @@ jobs:
         uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2 # v6
         with:
           report_type: test_results
-          files: ./junit.xml,./junit.deno.xml,./junit.bun.xml
+          files: ./junit.xml
           use_oidc: true
 
       - name: Codecov coverage
