@@ -11,6 +11,8 @@ Convert [IFC GUID](https://technical.buildingsmart.org/resources/ifcimplementati
 
     pnpm add @phi-ag/ifc-guid
 
+Alternatively just copy the [source code](src/index.ts) into your project.
+
 ### Example
 
 ```ts
