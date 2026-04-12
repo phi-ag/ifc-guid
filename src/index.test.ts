@@ -79,39 +79,37 @@ describe("ifc guid", () => {
 
   test("invalid type", () => {
     // @ts-expect-error
-    expect(() => fromIfcGuid([1, 2, 3])).toThrowError(
+    expect(() => fromIfcGuid([1, 2, 3])).toThrow(
       TypeError("Invalid IFC-GUID type", { cause: { type: "object" } })
     );
     // @ts-expect-error
-    expect(() => fromIfcGuid(123)).toThrowError(
+    expect(() => fromIfcGuid(123)).toThrow(
       TypeError("Invalid IFC-GUID type", { cause: { type: "number" } })
     );
     // @ts-expect-error
-    expect(() => fromIfcGuid(null)).toThrowError(
+    expect(() => fromIfcGuid(null)).toThrow(
       TypeError("Invalid IFC-GUID type", { cause: { type: "object" } })
     );
   });
 
   test("invalid length", () => {
     const tooLong = "01bhO9fsz_RxNh9a_y9jls_";
-    expect(() => fromIfcGuid(tooLong)).toThrowError(
+    expect(() => fromIfcGuid(tooLong)).toThrow(
       Error("Invalid IFC-GUID length", { cause: { length: 23 } })
     );
 
     const tooShort = "01bhO9fsz_RxNh9a_y9jl";
-    expect(() => fromIfcGuid(tooShort)).toThrowError(
+    expect(() => fromIfcGuid(tooShort)).toThrow(
       Error("Invalid IFC-GUID length", { cause: { length: 21 } })
     );
   });
 
   test("invalid character", () => {
     const containsEquals = "01bhO9fsz_RxNh9a_y9jl=";
-    expect(() => fromIfcGuid(containsEquals)).toThrowError(
-      "Invalid character in IFC-GUID"
-    );
+    expect(() => fromIfcGuid(containsEquals)).toThrow("Invalid character in IFC-GUID");
 
     const invalidFirstCharacter = "41bhO9fsz_RxNh9a_y9jls";
-    expect(() => fromIfcGuid(invalidFirstCharacter)).toThrowError(
+    expect(() => fromIfcGuid(invalidFirstCharacter)).toThrow(
       "Invalid character in IFC-GUID"
     );
   });
@@ -120,22 +118,22 @@ describe("ifc guid", () => {
     const tooShort = new Uint8Array([
       1, 207, 98, 200, 233, 188, 191, 136, 0, 0, 0, 0, 0, 0, 0
     ]);
-    expect(() => toIfcGuidArray(tooShort)).toThrowError(
+    expect(() => toIfcGuidArray(tooShort)).toThrow(
       Error("Invalid UUID length", { cause: { length: 15 } })
     );
   });
 
   test("invalid uuid type", () => {
     // @ts-expect-error
-    expect(() => toIfcGuidArray([1, 2, 3])).toThrowError(
+    expect(() => toIfcGuidArray([1, 2, 3])).toThrow(
       TypeError("Invalid UUID type", { cause: { type: "object" } })
     );
     // @ts-expect-error
-    expect(() => toIfcGuidArray("")).toThrowError(
+    expect(() => toIfcGuidArray("")).toThrow(
       TypeError("Invalid UUID type", { cause: { type: "string" } })
     );
     // @ts-expect-error
-    expect(() => toIfcGuidArray(null)).toThrowError(
+    expect(() => toIfcGuidArray(null)).toThrow(
       TypeError("Invalid UUID type", { cause: { type: "object" } })
     );
   });
