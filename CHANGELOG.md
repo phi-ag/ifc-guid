@@ -1,5 +1,36 @@
 # Changelog
 
+## [1.1.5](https://github.com/phi-ag/ifc-guid/compare/v1.1.4...v1.1.5) (2026-04-27)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([d1e891d](https://github.com/phi-ag/ifc-guid/commit/d1e891d05afaec9e4470cbed9f2013e6096b4893))
+* **deps:** lock file maintenance ([a8fef1b](https://github.com/phi-ag/ifc-guid/commit/a8fef1b98867cc51241077588852bbcd9d492175))
+* **deps:** update actions/cache digest to 27d5ce7 ([bdb5fbe](https://github.com/phi-ag/ifc-guid/commit/bdb5fbe37b0cdc38699adf3ca323a14f9672ac63))
+* **deps:** update actions/setup-node digest to 48b55a0 ([532b252](https://github.com/phi-ag/ifc-guid/commit/532b252da54a58559e4a46e4c6d0d680e78981e3))
+* **deps:** update dependency eslint to v10.2.0 ([b8e9b3a](https://github.com/phi-ag/ifc-guid/commit/b8e9b3ae69bdd121a9e363fab81cc62b95025b79))
+* **deps:** update dependency eslint to v10.2.1 ([976bc8f](https://github.com/phi-ag/ifc-guid/commit/976bc8ff45c754b0b0d7ab057fc1ac3bc4081ce8))
+* **deps:** update dependency fast-check to v4.7.0 ([8fa10ad](https://github.com/phi-ag/ifc-guid/commit/8fa10adf865e6fb78ce7b63431b01299f5c7e8e6))
+* **deps:** update dependency prettier to v3.8.2 ([dc872c1](https://github.com/phi-ag/ifc-guid/commit/dc872c1b7e8d11679505ad17d1d16898a2e0f931))
+* **deps:** update dependency prettier to v3.8.3 ([59c1c25](https://github.com/phi-ag/ifc-guid/commit/59c1c25646466066d88d1b85e899c6186885aea7))
+* **deps:** update dependency typescript to v6 ([95c117e](https://github.com/phi-ag/ifc-guid/commit/95c117e26df72da1b340ed46cba7d8e1916743bb))
+* **deps:** update dependency typescript to v6.0.3 ([0ded01b](https://github.com/phi-ag/ifc-guid/commit/0ded01b72a6940b7326ab2b905f0fe7c176686e9))
+* **deps:** update dependency typescript-eslint to v8.58.0 ([9e52cc8](https://github.com/phi-ag/ifc-guid/commit/9e52cc8320a98a175ab729ee30cf1beb8bccf742))
+* **deps:** update dependency typescript-eslint to v8.58.1 ([1431a2f](https://github.com/phi-ag/ifc-guid/commit/1431a2f6bd4d8b9ce21e5e398e49b8c05396e0d1))
+* **deps:** update dependency typescript-eslint to v8.58.2 ([0e43872](https://github.com/phi-ag/ifc-guid/commit/0e43872d9c5644cbda380dcee32e094c9ee5ff14))
+* **deps:** update dependency typescript-eslint to v8.59.0 ([78c83b3](https://github.com/phi-ag/ifc-guid/commit/78c83b3130ed8af3c9e59a2fbaf648b7d1d754f9))
+* **deps:** update dependency uuid to v14 ([a3d76cc](https://github.com/phi-ag/ifc-guid/commit/a3d76cc1e61aea62362f7f1ecc78c9f049be16c7))
+* **deps:** update googleapis/release-please-action action to v5 ([01450a3](https://github.com/phi-ag/ifc-guid/commit/01450a337cba8dc426e6e6fc546ff02c8a110c0b))
+* **deps:** update googleapis/release-please-action digest to 5c625bf ([2894c6d](https://github.com/phi-ag/ifc-guid/commit/2894c6d2556536c3523fbfeb2666e46c828bd88e))
+* **deps:** update node.js to v25.9.0 ([20b29eb](https://github.com/phi-ag/ifc-guid/commit/20b29ebb115f5ccf0e4e1e47c9d17da24d30d93b))
+* **deps:** update pnpm to v10.33.1 ([1058b10](https://github.com/phi-ag/ifc-guid/commit/1058b10b863ab3d6dae748bafee109c5131e639d))
+* **deps:** update pnpm to v10.33.2 ([f3af52b](https://github.com/phi-ag/ifc-guid/commit/f3af52b954dd9a43beb2008b010ee4d9e5a514d6))
+* **deps:** update vitest monorepo to v4.1.3 ([b14398f](https://github.com/phi-ag/ifc-guid/commit/b14398fc915352d3da8cc8337260000da336b797))
+* **deps:** update vitest monorepo to v4.1.4 ([adc9b87](https://github.com/phi-ag/ifc-guid/commit/adc9b870a8244b2f5fcf96fce6fd51648de6f4e1))
+* **deps:** update vitest monorepo to v4.1.5 ([10df23d](https://github.com/phi-ag/ifc-guid/commit/10df23d95be4dde93476d4317e76708e492f6a92))
+* replace deprecated toThrowError ([4d67dad](https://github.com/phi-ag/ifc-guid/commit/4d67dad75805203c32fad062b4cc722b0487ef67))
+
 ## [1.1.4](https://github.com/phi-ag/ifc-guid/compare/v1.1.3...v1.1.4) (2026-04-01)
 
 
